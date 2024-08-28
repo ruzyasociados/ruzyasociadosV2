@@ -1,0 +1,784 @@
+/* Globales */
+/* ================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: auto;
+    /* background-color: #253A75; */
+    padding-top: 56px;
+}
+
+#azul{
+    color: #253A75;
+}
+
+/* ================== */
+/*     Barra Menu     */
+/* ================== */
+#barra-superior {
+    background: #253A75;
+}
+
+/* ================== */
+/*        Menu        */
+/* ================== */
+#menu{
+    background: #253A75 !important;
+    transition: top 0.3s;
+}
+
+#menu a {
+    font-size: 18px;
+    /* font-weight: bold; */
+    color: #3f3f3f;
+}
+
+#menu button {
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+#iconos-menu i {
+    font-size: 30px;
+    padding: 0 8px;
+    color: #f3f3f3;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ================== */
+/*       Slider       */
+/* ================== */
+
+.carousel-inner {
+    max-height: 65vh;
+    /* Asegura que el carrusel abarque toda la pantalla */
+}
+
+.carousel-caption img {
+    max-width: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+.carousel-inner h5 {
+    color: #fff;
+    /* Asegura que el color del texto sea visible */
+    font-size: 50px;
+    /* Ajusta el tamaño del texto */
+    font-weight: bold;
+    /* Añade énfasis al título */
+    align-items: left;
+}
+
+.carousel-inner p {
+    color: #3f3f3f;
+    /* Asegura que el color del texto sea visible */
+    font-size: 25px;
+    /* Ajusta el tamaño del texto */
+    margin-top: 10px;
+    /* Añade un poco de espacio superior */
+    line-height: 1.5;
+    /* Mejora la legibilidad */
+    align-items: left;
+}
+
+#seccion-slide3 {
+    padding: 15px;
+    border-radius: 20px;
+    text-align: left;
+    justify-content: left;
+}
+
+.carousel-item {
+    height: 100vh;
+    /* Hace que cada elemento del carrusel ocupe toda la pantalla */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Hace que la imagen cubra el contenedor manteniendo su proporción */
+    height: 100%;
+    /* Asegura que la imagen tome toda la altura del contenedor */
+    width: 100%;
+}
+
+/* Añadir un degradado en la parte inferior del slider */
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta el porcentaje según el efecto deseado */
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    /* Asegura que el degradado no interfiera con la interactividad */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    height: 70%;
+    width: 80%;
+    z-index: 10;
+    /* Asegúrate de que este valor sea más alto que el de otros elementos */
+    /* text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); */
+    /* background-color: rgba(0, 0, 0, 0.5); Fondo negro semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo del botón "Saber más" */
+.carousel-caption button {
+    background-color: #253A75;
+    /* Color de fondo */
+    color: #ffffff;
+    /* Color del texto */
+    font-family: 'Montserrat', sans-serif;
+    /* Tipografía */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    border: none;
+    /* Sin borde */
+    border-radius: 30px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor de mano al pasar */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transiciones suaves */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+    /* Sombra */
+}
+
+/* Efecto al pasar el mouse por encima */
+.carousel-caption button:hover {
+    background-color: #3A50A1;
+    /* Cambia el color de fondo */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+    /* Aumenta la sombra */
+}
+
+/* Efecto al hacer clic */
+.carousel-caption button:active {
+    background-color: #1E2E59;
+    /* Color de fondo al hacer clic */
+    transform: scale(0.98);
+    /* Reduce ligeramente el tamaño */
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+    /* Reduce la sombra */
+}
+
+#titulo {
+    color: #253A75;
+}
+
+/* ================== */
+/*      Servicios     */
+/* ================== */
+.card_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card {
+    margin: 15px 0px; /* Ajusta el margen lateral a 10px */
+}
+
+.same-size-card {
+    height: 100%;
+}
+
+.container-s{
+    padding: 0;
+    align-items: center;
+}
+
+.card_box {
+    background: #ffffff;
+    border-radius: 10px !important;
+    margin: 20px;
+    padding: 15px;
+}
+
+.card_text {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.card_text h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #253A75;
+}
+
+.card_text p {
+    justify-content: baseline;
+    line-height: 150%;
+    margin-top: 10px;
+    color: #3f3f3f;
+}
+
+/* Estilo para el contenido de las tarjetas */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body h6 {
+    color: #253A75;
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Animación de agrandamiento */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Versión con mayor especificidad */
+.container-s .card-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Versión con mayor especificidad */
+.container-s .card-hover {
+    border: .5px solid rgb(165, 165, 165);
+}
+
+/* Establecer un tamaño fijo para todas las tarjetas */
+.same-size-card {
+    height: 550px;
+    width: 100%;
+    max-width: 350px;
+    
+}
+
+/* Enlaces de las tarjetas */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==================== */
+/* Mision,Vision,Valores */
+/* ==================== */
+
+.container {
+    padding-left: 15px; /* Ajusta el padding para los bordes */
+    padding-right: 15px;
+}
+
+
+
+/* ================== */
+/*      Acerca de     */
+/* ================== */
+#acerca-de {
+    background: #ffffff !important;
+}
+
+#acerca-de p {
+    text-align: justify;
+}
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+/* =================== */
+/*      Feed Blog      */
+/* =================== */
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#d5d5d5, #cacaca);
+}
+
+.card-list-b .card-item-b{
+    list-style: none;
+}
+
+.card-list-b .card-item-b .card-link-b{
+    width: 400px;
+    display: block;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-list-b .card-item-b .card-link-b:hover{
+    transform: scale(1.05);
+}
+
+.card-list-b .card-link-b .card-image-b{
+   width: 100%; 
+   aspect-ratio: 16/9;
+   object-fit: cover;
+   border-radius: 12px;
+}
+
+.card-list-b .card-link-b .badge-b{
+    color: #253A75;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list-b .card-link-b .badge-b.estudio2{
+    color: #fff;
+    background: #9da13a;
+}
+
+.card-list-b .card-link-b .badge-b.estudio3{
+    color: #fff;
+    background: #55af70;
+}
+
+.card-list-b .card-link-b .badge-b.estudio4{
+    color: #fff;
+    background: #a1573a;
+}
+
+.card-list-b .card-link-b .badge-b.estudio5{
+    color: #fff;
+    background: #a13a89;
+}
+
+.card-list-b .card-link-b .card-title-b{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list-b .card-link-b .card-button-b{
+    height: 35px;
+    width: 35px;
+    color: #3A50A1;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #3A50A1;
+    transform: rotate(-45deg);
+}
+
+.card-list-b .card-link-b:hover .card-button-b{
+    color: #fff;
+    background: #3A50A1;
+}
+
+/* ================== */
+/*     BG Contacto    */
+/* ================== */
+#seccion-contacto{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#bg-contacto {
+    position: relative;
+    width: 100%;
+    height: auto; /* Ajusta la altura del SVG para que se adapte al contenedor */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* =================== */
+/*  Contacto Formulario */
+/* =================== */
+#seccion-contacto {
+    background-color: #ffffff;
+    padding: 20px 0; /* Ajusta el padding para reducir el espacio arriba y abajo */
+    position: relative;
+    overflow: hidden; /* Evita el desbordamiento de contenido */
+}
+
+#contenedor-formulario {
+    margin: 50px auto 0; /* Ajusta el margen superior según sea necesario */
+    background: #e2e2e2;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+#seccion-contacto .btn-primary {
+    background-color: #253A75; /* Color de fondo del botón */
+    border: none; /* Quitar borde */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+    font-size: 1.25rem; /* Tamaño del texto */
+    padding: 10px 20px; /* Padding interno */
+}
+
+/* Efecto hover */
+#seccion-contacto .btn-primary:hover {
+    transform: scale(1.05); /* Crece un poco al pasar el mouse */
+}
+
+.container #contenedor-formulario{
+    border-color: #ff0000;
+}
+/* =================== */
+/*        Footer       */
+/* =================== */
+
+footer {
+    background: #253A75;
+    min-height: 100px;
+    margin-top:0%; /* Ajusta este valor según sea necesario */
+}
+
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+#iconos {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    margin-top: 10px; /* Espacio entre el texto y los íconos */
+}
+
+#iconos a {
+    color: #ffffff;
+    margin: 0 8px; /* Espacio entre los iconos */
+    text-decoration: none;
+}
+
+
+/* =================== */
+/*      UBICACION      */
+/* =================== */
+
+#local {
+    background: #ffffff;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 70%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+#fondo-pie{
+    background-color: #253A75;
+    padding-bottom: 20px;
+}
+
+#mapa{
+    color: #000;
+    text-decoration: none;
+}
+
+#mapa:hover{
+    color: #253A75;
+    font-size: 16.10px;
+}
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/*     SERVICIOS      */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+
+
+/* ====================== */
+/* Imagen de Presentación */
+/* ====================== */
+#imagen-servicio {
+    float: left; /* La imagen flota a la izquierda del texto */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 20px; /* Espacio debajo de la imagen para que el texto no se empalme */
+    max-width: 50%; /* La imagen ocupa hasta el 50% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+p {
+    text-align: left; /* Alineación a la izquierda para evitar la justificación completa */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+}
+
+
+#presentacion .text-center {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#presentacion h1{
+    margin: 0;
+    font-weight: bold;
+}
+
+#presentacion p {
+    margin: 0;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.servicios-img {
+    width: 100%;
+    height: 200px; /* Ajusta esta altura según lo que necesites */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+.img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color negro difuminado, ajusta el color y la opacidad */
+    z-index: 1;
+}
+
+.servicios-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cambia el color del texto según tus necesidades */
+    text-align: center;
+    font-size: 24px; /* Ajusta el tamaño de la fuente según lo que necesites */
+    font-weight: bold; /* Hace el texto más destacado */
+    z-index: 2; /* Asegura que el texto esté por encima del fondo difuminado */
+    padding-top: 40px;
+}
+
+.servicios-text h1{
+    font-weight: bold;
+}
+
+/* ================== */
+/*    Seccion Texto   */
+/* ================== */
+
+#seccion-texto {
+    background-color: #ffffff; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    padding: 60px 0; /* Espaciado superior e inferior */
+
+  }
+  
+  #seccion-texto h2 {
+    font-size: 2.5rem;
+    color: #253A75; /* Color azul oscuro */
+    text-align: left;
+  }
+  
+  #seccion-texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify; /* Justificado */
+  }
+
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/*     Responsive     */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+/* ================== */
+
+/* ================== */
+/*   Pantalla 1200+   */
+/* ================== */
+@media (max-width: 1200px) {
+    .card_wrapper {
+        padding: 40px 0;
+    }
+
+    .card_text {
+        padding: 10px;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 45%; /* Las tarjetas ocuparán el 45% del ancho */
+        max-width: 45%;
+        margin-bottom: 30px;
+    }
+}
+/* ================== */
+/*    Pantalla 768    */
+/* ================== */
+@media (max-width: 768px) {
+    .card_wrapper {
+        padding: 20px 0; /* Ajusta el padding para pantallas pequeñas */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra las tarjetas horizontalmente */
+    }
+
+    .col-md-6 {
+        flex: 0 0 90%; /* Las tarjetas ocuparán el 90% del ancho */
+        max-width: 90%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto; /* Asegura que la tarjeta esté centrada horizontalmente */
+    }
+
+    .card-body h6 {
+        font-size: 14px;
+    }
+
+    .card_text p {
+        font-size: 14px;
+    }
+
+    .carousel-inner {
+        max-height: 60vh; /* Ajusta la altura máxima del carrusel */
+    }
+
+    .carousel-caption {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; /* Alinea el texto al centro */
+        width: 90%; /* Ajusta el ancho según sea necesario */
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+    }
+
+    .carousel-inner h5 {
+        font-size: 30px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .carousel-inner p {
+        font-size: 16px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .carousel-item {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+
+    .carousel-item img {
+        height: auto; /* Asegura que la imagen se ajuste bien */
+        width: 100%;
+    }
+}
+
+
+/* ================== */
+/*    Pantalla 576    */
+/* ================== */
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .card_wrapper {
+        padding: 20px 0;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 100%; /* Las tarjetas ocuparán el 100% del ancho */
+        max-width: 100%;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto; /* Centrando las tarjetas */
+    }
+
+    .card-body h6 {
+        font-size: 12px;
+    }
+
+    .card_text p {
+        font-size: 12px;
+    }
+
+    .carousel-inner h5 {
+        font-size: 20px;
+    }
+
+    .carousel-inner p {
+        font-size: 8px;
+    }
+}
+
