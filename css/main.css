@@ -251,6 +251,7 @@ body {
 .card-text {
     flex-grow: 1;
     margin-bottom: 20px;
+    color: #000;
 }
 
 /* Animación de agrandamiento */
@@ -260,12 +261,12 @@ body {
 
 /* Versión con mayor especificidad */
 .container-s .card-hover:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    transform: translateY(-10px);
 }
 
-/* Versión con mayor especificidad */
 .container-s .card-hover {
-    border: .5px solid rgb(165, 165, 165);
+    /* border: .5px solid rgb(165, 165, 165); */
 }
 
 /* Establecer un tamaño fijo para todas las tarjetas */
@@ -439,16 +440,15 @@ body {
 
 #contenedor-formulario {
     margin: 50px auto 0; /* Ajusta el margen superior según sea necesario */
-    background: #e2e2e2;
+    background: #ffffff;
     border-radius: 5px;
-    max-width: 500px;
+    max-width: 40%;
     padding: 20px;
     margin-bottom: 50px;
     text-align: center;
     position: relative;
     transition: 0.2s ease;
 }
-
 
 #titulo-formulario {
     color: #3f3f3f;
@@ -460,16 +460,18 @@ body {
     transition: transform 0.3s ease; /* Transición suave para el hover */
     font-size: 1.25rem; /* Tamaño del texto */
     padding: 10px 20px; /* Padding interno */
+    max-width: 20%;
 }
 
 /* Efecto hover */
 #seccion-contacto .btn-primary:hover {
+    background-color: #ffffff;
+    color: #253A75;
+    border-style: solid;
+    border: #253A75;
     transform: scale(1.05); /* Crece un poco al pasar el mouse */
 }
 
-.container #contenedor-formulario{
-    border-color: #ff0000;
-}
 /* =================== */
 /*        Footer       */
 /* =================== */
