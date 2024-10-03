@@ -680,6 +680,14 @@ p {
         max-width: 45%;
         margin-bottom: 30px;
     }
+
+    #contenedor-formulario {
+        max-width: 60%;  /* Ajusta el ancho del formulario */
+    }
+
+    #seccion-contacto .btn-primary {
+        max-width: 50%;  /* Ajusta el ancho del botón */
+    }
 }
 /* ================== */
 /*    Pantalla 768    */
@@ -742,6 +750,43 @@ p {
         object-fit: cover;
         height: 60vh; /* Asegura que la imagen se ajuste bien */
         width: 100%;
+    }
+
+    #contenedor-formulario {
+        max-width: 90%;  /* Hacer que el formulario ocupe casi todo el ancho */
+        padding: 15px;   /* Reducir el padding */
+    }
+
+    #seccion-contacto .btn-primary {
+        max-width: 100%; /* El botón ocupa todo el ancho */
+        font-size: 1rem; /* Reducir el tamaño del texto del botón */
+    }
+
+    #titulo-formulario img {
+        width: 80px;   /* Ajustar el tamaño del icono de contacto */
+        height: 80px;
+    }
+}
+
+/* ================== */
+/*    Pantalla 576    */
+/* ================== */
+@media (max-width: 576px) {
+    #contenedor-formulario {
+        max-width: 100%;  /* Usar todo el ancho */
+        padding: 10px;    /* Reducir el padding */
+    }
+
+    #seccion-contacto .btn-primary {
+        font-size: 0.9rem; /* Reducir un poco más el texto del botón */
+    }
+
+    #titulo-formulario h2 {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente para títulos */
+    }
+
+    #titulo-formulario p {
+        font-size: 1rem; /* Ajustar el tamaño del texto */
     }
 }
 
