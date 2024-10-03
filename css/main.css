@@ -265,16 +265,11 @@ body {
     transform: translateY(-10px);
 }
 
-.container-s .card-hover {
-    /* border: .5px solid rgb(165, 165, 165); */
-}
-
 /* Establecer un tamaño fijo para todas las tarjetas */
 .same-size-card {
     height: 550px;
     width: 100%;
     max-width: 350px;
-    
 }
 
 /* Enlaces de las tarjetas */
@@ -718,37 +713,43 @@ p {
     }
 
     .carousel-caption {
-        top: 50%;
+        top: 60%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -60%);
         text-align: center; /* Alinea el texto al centro */
         width: 90%; /* Ajusta el ancho según sea necesario */
         padding: 10px; /* Ajusta el padding para pantallas pequeñas */
     }
 
+    .carousel-caption button {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+        padding: 8px 16px; /* Reduce el padding del botón */
+    }
+
     .carousel-inner h5 {
-        font-size: 30px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+        font-size: 40px; /* Reduce el tamaño del título en pantallas pequeñas */
     }
 
     .carousel-inner p {
-        font-size: 16px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+        font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
     }
 
     .carousel-item {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        height: 60vh; /* Reduce la altura en pantallas pequeñas */
     }
 
     .carousel-item img {
-        height: auto; /* Asegura que la imagen se ajuste bien */
+        object-fit: cover;
+        height: 60vh; /* Asegura que la imagen se ajuste bien */
         width: 100%;
     }
 }
 
 
 /* ================== */
-/*    Pantalla 576    */
+/*    Pantalla 480    */
 /* ================== */
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
