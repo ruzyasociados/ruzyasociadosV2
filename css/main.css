@@ -777,11 +777,15 @@ p {
     }
 
     .carousel-inner h5 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .carousel-inner p {
-        font-size: 8px;
+        font-size: 14px;
+    }
+
+    .carousel-caption {
+        width: 95%;
     }
 }
 
