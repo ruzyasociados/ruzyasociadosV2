@@ -510,7 +510,8 @@ footer p {
 
 #local {
     background: #ffffff;
-    padding-bottom: 300px;
+    padding-bottom: 300px; /* Asegura suficiente espacio debajo */
+    margin-bottom: 50px; /* Espacio adicional entre secciones */
     display: flex;
     justify-content: center;
     font-size: 16px;
@@ -520,6 +521,19 @@ footer p {
     width: 70%;
     margin-left: 100px;
     padding-top: 150px;
+    text-align: left; /* Centra el contenido */
+}
+
+#numeros-local {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px 0;
+}
+
+#numeros-local div {
+    flex: 1; /* Hace que cada bloque ocupe el mismo espacio */
+    text-align: center;
 }
 
 #fondo-pie{
@@ -527,12 +541,13 @@ footer p {
     padding-bottom: 20px;
 }
 
-#mapa{
+#mapa {
     color: #000;
     text-decoration: none;
+    display: block;
 }
 
-#mapa:hover{
+#mapa:hover {
     color: #253A75;
     font-size: 16.10px;
 }
@@ -766,6 +781,34 @@ p {
         width: 80px;   /* Ajustar el tamaño del icono de contacto */
         height: 80px;
     }
+
+    #local {
+        flex-direction: column; /* Apila los elementos en lugar de alinearlos horizontalmente */
+        padding-bottom: 50px;
+    }
+
+    .wrapper {
+        width: 100%; /* Usa todo el ancho disponible */
+        margin-left: 0;
+        padding-top: 50px; /* Reduce el padding superior */
+    }
+
+    #numeros-local {
+        flex-direction: column; /* Cambia la dirección a vertical */
+        align-items: center;
+        gap: 30px; /* Aumenta el espacio entre los bloques */
+    }
+
+    #numeros-local div {
+        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
+        padding: 20px;
+    }
+
+    #mapa img {
+        width: 100px; /* Ajusta el tamaño de las imágenes de los mapas */
+        height: 100px;
+    }
+
 }
 
 /* ================== */
@@ -787,6 +830,16 @@ p {
 
     #titulo-formulario p {
         font-size: 1rem; /* Ajustar el tamaño del texto */
+    }
+
+    #numeros-local div {
+        width: 100%; /* Usa todo el ancho */
+        padding: 15px;
+    }
+
+    #mapa img {
+        width: 80px; /* Ajusta el tamaño de las imágenes para pantallas pequeñas */
+        height: 80px;
     }
 }
 
