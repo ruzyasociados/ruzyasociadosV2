@@ -431,6 +431,8 @@ body {
     padding: 20px 0; /* Ajusta el padding para reducir el espacio arriba y abajo */
     position: relative;
     overflow: hidden; /* Evita el desbordamiento de contenido */
+    padding-top: 50px; /* Asegura espacio suficiente en la parte superior */
+    margin-top: 50px; /* Añade margen superior para evitar empalme */
 }
 
 #contenedor-formulario {
@@ -515,6 +517,7 @@ footer p {
     display: flex;
     justify-content: center;
     font-size: 16px;
+    border-top: none;
 }
 
 .wrapper {
@@ -529,11 +532,29 @@ footer p {
     justify-content: space-around;
     gap: 20px; /* Espacio entre las columnas */
     padding: 20px 0;
+    border: none; /* Asegura que no haya bordes entre los elementos */
 }
 
 #numeros-local div {
     flex: 1; /* Hace que cada bloque ocupe el mismo espacio */
     text-align: center;
+    border: none; /* Elimina cualquier borde de los contenedores */
+}
+
+/* Remover cualquier borde en los divs o enlaces del mapa */
+#numeros-local div, #numeros-local a {
+    border: none; /* Remueve cualquier borde que pueda estar presente */
+    margin: 0; /* Asegura que no haya márgenes que causen líneas */
+    padding: 0; /* Evita rellenos innecesarios */
+}
+
+/* Remover posibles bordes entre las imágenes */
+#numeros-local img {
+    border: none; /* Asegura que las imágenes no tengan bordes */
+}
+
+#numeros-local p {
+    margin: 0; /* Asegura que los párrafos no tengan márgenes que generen espacios */
 }
 
 #fondo-pie{
@@ -772,6 +793,10 @@ p {
         padding: 15px;   /* Reducir el padding */
     }
 
+    #seccion-contacto {
+        margin-top: 50px; /* Añade margen superior en la sección de contacto */
+    }
+
     #seccion-contacto .btn-primary {
         max-width: 100%; /* El botón ocupa todo el ancho */
         font-size: 1rem; /* Reducir el tamaño del texto del botón */
@@ -784,7 +809,7 @@ p {
 
     #local {
         flex-direction: column; /* Apila los elementos en lugar de alinearlos horizontalmente */
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
 
     .wrapper {
