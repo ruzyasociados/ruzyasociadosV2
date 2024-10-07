@@ -252,6 +252,11 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Versión con mayor especificidad */
+.container .card-hover:hover {
+    /* transform: scale(1.05); */
+    transform: translateY(-10px);
+}
 
 /* Establecer un tamaño fijo para todas las tarjetas */
 .same-size-card {
