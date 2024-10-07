@@ -102,7 +102,7 @@
                 <div class="carousel-item active" data-interval="9000">
                     <img src="../img/slider-1.png" class="d-block w-100"
                         alt="slide1">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up">
                             <h5 class="text-light d-flex">
                                 Fast and smart resolution
@@ -117,7 +117,7 @@
                 <div class="carousel-item" data-interval="9000">
                     <img src="../img/slider-2.jpg" class="d-block w-100"
                         alt="slide2">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up" id="seccion-slide3">
                             <h5>Accounting Management and <br>Advanced
                                 Administration</h5>
@@ -136,7 +136,7 @@
                 <div class="carousel-item" data-interval="9000">
                     <img src="../img/slider-3.jpg" class="d-block w-100"
                         alt="slide3">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up" id="seccion-slide3">
                             <h5>Compliance Solutions</h5>
                             <p class="text-light d-flex">
@@ -151,9 +151,9 @@
                 </div>
                 <!-- Slide 4 -->
                 <div class="carousel-item" data-interval="9000">
-                    <img src="../img/slider-4.jpg" class="d-block w-100"
+                    <img src="../img/slider-4.webp" class="d-block w-100"
                         alt="slide3">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up" id="seccion-slide3">
                             <h5>Comprehensive Consulting Services</h5>
                             <p class="text-light d-flex">
@@ -170,7 +170,7 @@
                 <div class="carousel-item" data-interval="9000">
                     <img src="../img/slider-5.jpg" class="d-block w-100"
                         alt="slide3">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up" id="seccion-slide3">
                             <h5>Global Trade and Migration Management</h5>
                             <p class="text-light d-flex">
@@ -188,7 +188,7 @@
                 <div class="carousel-item" data-interval="9000">
                     <img src="../img/slider-6.jpg" class="d-block w-100"
                         alt="slide3">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <section data-aos="fade-up" id="seccion-slide3">
                             <h5>Tax Management</h5>
                             <p class="text-light d-flex">
@@ -224,10 +224,10 @@
         <!-- ====================== -->
 
         <div class="card_wrapper py-5" id="servicios">
-            <div class="container-s">
-                <div class="row mb-5">
+            <div class="container">
+                <div class="mb-5">
                     <div class="col-12 text-center">
-                        <h2 class="head_text" id="titulo">SERVICES</h2>
+                        <h2 id="azul">SERVICES</h2>
                     </div>
                 </div>
 
@@ -647,9 +647,10 @@
                             aligned with your objectives.
                         </p>
                     </div>
-                    <div class="col-md-12 text-center text-md-end mb-5">
+                    <div
+                        class="col-md-12 d-flex justify-content-center align-items-center mb-5">
                         <img src="../img/logo-ruz.png" alt="quienes somos"
-                            class="img-fluid m-5">
+                        class="img-fluid img-centered">
                     </div>
                 </div>
             </div>
@@ -667,48 +668,54 @@
     <!--       Ubicacion        -->
     <!-- ====================== -->
     <section>
-        <div id="local" class="border-top border-2 justify-content-center">
+        <div id="local" class="border-top justify-content-center">
           <div class="mapa"></div>
           <div>
             <div class="wrapper">
-              <h2>UBICANOS EN</h2>
-              <h2 class id="azul">AGUASCALIENTES, CANCÚN AND CDMX</h2>
-              <p class id="azul">
-                One of our many branches around the Mexican Republic
-              </p>
-              <section class="d-flex" id="numeros-local">
-                <div>
-                  <a href="https://maps.app.goo.gl/ff4P2A83j685o8VQ7" id="mapa"><img
-                      src="../img/map.svg" alt="ubicacion">
-                  <p class="fs-5" id="azul">AGUASCALIENTES</p>
-                  <p>Paseo de los Chicahuales 902, Corral de Barrancos, C.P. 20900
-                    Jesús María, Ags.</p>
-                  </a>
+              <div class="w-75 m-3">
+                <h2>FIND US IN</h2>
+                <h2 id="azul">AGUASCALIENTES, CANCUN <br>AND MEXICO CITY</h2>
+                <p id="azul">
+                  One of our branches around the country
+                </p>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="https://maps.app.goo.gl/ff4P2A83j685o8VQ7" id="mapa">
+                      <img src="../img/map.svg" alt="location">
+                      <p class="fs-5" id="azul">AGUASCALIENTES</p>
+                      <p>Paseo de los Chicahuales 902, Corral de Barrancos, C.P.
+                        20900 Jesús María, Ags.</p>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="https://maps.app.goo.gl/1HvEwzZH2JmyRNMp7" id="mapa">
+                      <img src="../img/map.svg" alt="location">
+                      <p class="fs-5" id="azul">CANCUN</p>
+                      <p>Blvd. Kukulcan km. 20 Condominio Cancún Plaza Interior 4301,
+                        Manzana 55, Lote 65. Colonia Zona Hotelera
+                        C.P. 77500 Cancún, Quintana Roo.</p>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="https://maps.app.goo.gl/QPZrkK6PFbRp4oPKA" id="mapa">
+                      <img src="../img/map.svg" alt="location">
+                      <p class="fs-5" id="azul">MEXICO CITY</p>
+                      <p>San Jerónimo 1348, Colonia San Jerónimo Lídice, La Magdalena
+                        Contreras, C.P. 10200, Mexico City.
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <a href="https://maps.app.goo.gl/1HvEwzZH2JmyRNMp7" id="mapa">
-                  <img src="../img/map.svg" alt="ubicacion">
-                  <p class="fs-5" id="azul">CANCÚN</p>
-                  <p>Blvd. Kukulcan km. 20 Condominio Cancún Plaza Interior 4301,
-                    Manzana 55, Lote 65. Colonia Zona Hotelera
-                    C.P. 77500 Cancún, Quintana Roo.</p>
-                  </a>
-                </div>
-                <div>
-                  <a href="https://maps.app.goo.gl/QPZrkK6PFbRp4oPKA" id="mapa">
-                  <img src="../img/map.svg" alt="ubicacion">
-                  <p class="fs-5" id="azul">CIUDAD DE MEXICO</p>
-                  <p>San Jerónimo 1348, Colonia San Jerónimo Lídice, La Magdalena
-                    Contreras, C.P. 10200, Ciudad de México.
-                  </p>
-                </a>
-                </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      
 
+      
         <!-- ====================== -->
         <!--    BG Formulario       -->
         <!-- ====================== -->

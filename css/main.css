@@ -181,10 +181,6 @@ body {
     /* Reduce la sombra */
 }
 
-#titulo {
-    color: #253A75;
-}
-
 /* ================== */
 /*      Servicios     */
 /* ================== */
@@ -203,10 +199,7 @@ body {
     height: 100%;
 }
 
-.container-s{
-    padding: 0;
-    align-items: center;
-}
+
 
 .card_box {
     background: #ffffff;
@@ -259,11 +252,6 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Versión con mayor especificidad */
-.container-s .card-hover:hover {
-    /* transform: scale(1.05); */
-    transform: translateY(-10px);
-}
 
 /* Establecer un tamaño fijo para todas las tarjetas */
 .same-size-card {
