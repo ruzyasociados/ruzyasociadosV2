@@ -1,11 +1,11 @@
 let prevScrollpos = window.pageYOffset;
 const navbar = document.getElementById("menu");
+const navbarCollapse = document.getElementById("navbarSupportedContent");
+const toggler = document.querySelector(".navbar-toggler");
 
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   const windowHeight = window.innerHeight;
-
-  // La mitad de la altura de la ventana
   const halfWindowHeight = windowHeight / 2;
 
   if (currentScrollPos <= halfWindowHeight) {
@@ -18,3 +18,31 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollPos;
 };
+
+// Cerrar el menú de navegación al seleccionar una opción
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll("#navbarSupportedContent .nav-link");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+      bsCollapse.hide(); // Cierra el menú
+    });
+  });
+});
+
+// Cerrar el menú al hacer clic en el botón de toggle
+toggler.addEventListener("click", function() {
+  if (navbarCollapse.classList.contains("show")) {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+    bsCollapse.hide(); // Cierra el menú si está abierto
+  }
+});
+
+// Cerrar el menú al hacer clic fuera de él
+document.addEventListener("click", function(event) {
+  if (!navbarCollapse.contains(event.target) && !toggler.contains(event.target) && navbarCollapse.classList.contains("show")) {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+    bsCollapse.hide(); // Cierra el menú
+  }
+});

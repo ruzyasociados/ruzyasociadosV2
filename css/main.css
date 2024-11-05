@@ -13,6 +13,9 @@ body {
     color: #253A75;
 }
 
+a {
+    text-decoration: none !important;
+}
 /* ================== */
 /*     Barra Menu     */
 /* ================== */
@@ -46,6 +49,20 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.navbar-toggler {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde */
+    color: #fff;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none; /* Elimina el efecto de sombra al hacer clic */
+  }
+  
+  .navbar-toggler-icon {
+    color: #253A75; /* Cambia el color de las líneas a blanco */
+  }
 
 /* ================== */
 /*       Slider       */
@@ -260,7 +277,7 @@ body {
 
 /* Establecer un tamaño fijo para todas las tarjetas */
 .same-size-card {
-    height: 550px;
+    height: 280px;
     width: 100%;
     max-width: 350px;
 }
@@ -551,7 +568,7 @@ footer p {
 }
 
 #fondo-pie{
-    background-color: #253A75;
+    background-color: rgb(37, 58, 117);
     padding-bottom: 20px;
 }
 
@@ -565,6 +582,77 @@ footer p {
     color: #253A75;
     font-size: 16.10px;
 }
+
+
+/* ================= */
+/* ===== BOTON ===== */
+/* ================= */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 30vh; /* O cualquier altura que desees para el contenedor */
+}
+
+button {
+    --primary-color: #253A75;
+    --secondary-color: #fff;
+    --hover-color: #2c427e;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 30px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+  }
+  
+  button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  button:hover .arrow:before {
+    right: 0;
+  }
+
 /* ================== */
 /* ================== */
 /* ================== */
