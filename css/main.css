@@ -522,7 +522,6 @@ footer p {
 
 #local {
     background: #ffffff;
-    padding-bottom: 300px; /* Asegura suficiente espacio debajo */
     margin-bottom: 50px; /* Espacio adicional entre secciones */
     display: flex;
     justify-content: center;
