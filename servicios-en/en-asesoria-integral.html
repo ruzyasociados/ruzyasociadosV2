@@ -1,239 +1,302 @@
 <!doctype html>
 <html lang="es">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Widgets -->
+  <script src="https://static.elfsight.com/platform/platform.js"
+  data-use-service-core defer></script>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/conta.css">
+  <title>RUZ Y ASOCIADOS</title>
+  <link rel="icon" href="../img/icono-pagina.png" type="image/png">
+</head>
 
-    <!-- Animate On Scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Widgets -->
-    <script src="https://static.elfsight.com/platform/platform.js"
-      data-use-service-core defer></script>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-    <title>RUZ Y ASOCIADOS</title>
-    <link rel="icon" href="../img/icono-pagina.png" type="image/png">
-  </head>
-
-  <body>
-    <!-- ====================== -->
-    <!--       Encabezado       -->
-    <!-- ====================== -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-      id="menu">
-      <a class="navbar-brand" href="#">
-        <span class="text-primary fs-5 fw-bold ml-5">
-          <a href="../english/home.html">
-            <img src="../img/logo-ruz-b.png" alt="logo de Ruz" width="130"
-            height="50">
-          </a>
-        </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-3 ml-auto">
-          <!-- Añadido mx-3 para margen horizontal y ml-auto para alinear a la derecha -->
-          <li class="nav-item active">
-            <a class="nav-link text-light" href="../english/home.html">HOMME
-              <span
-                class="sr-only">(current)</span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light"
-              href="../servicios-en/en-servicios.html">SERVICES</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light"
-              href="#seccion-contacto">CONTACT</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-light"
-              href="../servicios/asesoria-integral.html"><img
-                src="../img/globe.svg"
-                alt="Cambio de idioma">ESP</a>
-          </li>
-        </ul>
+<body>
+  <!-- ====================== -->
+  <!--       Encabezado       -->
+  <!-- ====================== -->
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="menu">
+            <a class="navbar-brand" href="#">
+              <a href="../index.html">
+                <img src="../img/logo-ruz-b.png" alt="logo de Ruz" width="130" height="50">
+              </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-3 ml-auto">
+              <!-- Añadido mx-3 para margen horizontal y ml-auto para alinear a la derecha -->
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="../index.html">HOME
+                  <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-light dropdown-toggle"   id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SERVICES
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right bg-primary" aria-labelledby="serviciosDropdown">
+                    <a class="dropdown-item text-light" href="../servicios-en/en-contabilidad.html">Accounting</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-soluciones-de-cumplimiento.html">Compliance solutions</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-asesoria-integral.html">Integral consulting</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-planificacion-tributaria-internacional.html">International tax planning</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-fiscal.html">Fiscal</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-legal.html">Legal</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-estudios-de-presios-de-transferencia.html">Transfer pricing studies</a>
+                    <a class="dropdown-item text-light" href="../servicios-en/en-migracion.html">Migration</a>
+                  </div>
+                  
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#seccion-contacto">CONTACT</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="../servicios/asesoria.html">
+                    <img src="../img/globe.svg" alt="Cambio de idioma" style="width:20px; height:20px; margin-right:5px;">
+                    <img src="../img/mx.webp" alt="English" class="img-fluid" style="max-width:24px; height:auto; vertical-align:middle;">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-    </nav>
-
-    <!-- ====================== -->
-    <!--    Img. Encanezado     -->
-    <!-- ====================== -->
-    <div class="img-container">
-      <img src="../img/s-asesoria-integral.jpeg" class="d-block w-100 servicios-img" alt="slide1">
-      <div class="servicios-text">
-          <h1>COMPREHENSIVE ADVICE</h1>
+    </div>
+  </section>
+  
+  <!-- ====================== -->
+  <!--    Img. Encanezado     -->
+  <!-- ====================== -->
+  <br><br>
+  <h1 class="my-3 text-center">Integral consulting</h1>
+  <div class="wind-divider">
+    <div class="wind-divider">
+      <div class="wind-divider">
+        <div class="wind-divider">
+          <div class="wind-divider">
+            <svg width="100%" height="64" viewBox="0 0 1920 64" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+              <path class="wind-path-divider wind-main" d="M0 20 Q480 -30 960 20 T1920 20" stroke="#253A75" stroke-width="3" fill="none"/>
+              <path class="wind-path-divider wind-light1" d="M240 40 Q700 10 1200 40 T1680 40" stroke="#7a8cc7" stroke-width="2" fill="none"/>
+              <path class="wind-path-divider wind-light2" d="M600 58 Q960 44 1320 58" stroke="#b3c6e7" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-
-    <!-- ====================== -->
-    <!--    Sección de Texto    -->
-    <!-- ====================== -->
-    <section id="seccion-texto" class="py-5">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="mb-4">LABOR</h2>
-            <p>
-              We offer a comprehensive labor advisory service that includes a
-              thorough review of contracts, management of labor procedures and
-              lawsuits, precise calculation of severance pay, and advice on
-              immigration procedures. Our goal is to ensure that all aspects
-              related to employment in your company are properly managed and
-              comply with current regulations, minimizing risks and optimizing
-              the administration of your human resources.
-            </p><br><br><br><br>
-            <h2 class="mb-4">CORPORATE</h2>
-            <p>
-              Our corporate advisory services include the incorporation of
-              companies, registration with the RFC and various government
-              entities, and advice on lawsuits, amparos and other civil,
-              commercial and administrative matters. We provide comprehensive
-              support to establish and maintain your company in compliance with
-              all regulations and legal requirements, providing a solid
-              framework for your growth and operations.
-            </p><br><br><br><br>
-            <h2 class="mb-4">FINANCIAL</h2>
-            <p>
-              We offer financial advice for the projection and evaluation of
-              investment projects, detailed analysis of your financial situation
-              and support in obtaining credit. Our team works with you to
-              develop effective financial strategies, evaluate the viability of
-              investments and ensure that you obtain the necessary financing to
-              achieve your business objectives.
-            </p><br><br><br><br>
-            <h2 class="mb-4">AUDIT</h2>
-            <p>
-              We conduct a thorough audit of your financial statements and
-              accounting to ensure the accuracy and reliability of the
-              information reported. Our detailed review process provides you
-              with a clear view of your company's financial situation, ensuring
-              transparency and compliance with accounting and tax regulations.
-            </p><br><br>
-            <p class="text-center">
-                ____________________________________________________________________________________
-            </p>
-          </div>
+  <div class="gif-fullwidth">
+    <img src="../img/aseso.gif" alt="Contabilidad GIF" class="img-fluid w-100">
+  </div>
+  
+  
+  <!-- ====================== -->
+  <!--    Sección de Texto    -->
+  <!-- ====================== -->
+  <section id="seccion-texto" class="py-5">
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="mb-4">LABOR</h2>
+          <p>
+            We offer a comprehensive labor advisory service that includes a
+            thorough review of contracts, management of labor procedures and
+            lawsuits, precise calculation of severance pay, and advice on
+            immigration procedures. Our goal is to ensure that all aspects
+            related to employment in your company are properly managed and
+            comply with current regulations, minimizing risks and optimizing
+            the administration of your human resources.
+          </p><br><br>
+          <h2 class="mb-4">CORPORATE</h2>
+          <p>
+            Our corporate advisory services include the incorporation of
+            companies, registration with the RFC and various government
+            entities, and advice on lawsuits, amparos and other civil,
+            commercial and administrative matters. We provide comprehensive
+            support to establish and maintain your company in compliance with
+            all regulations and legal requirements, providing a solid
+            framework for your growth and operations.
+          </p><br><br>
+          <h2 class="mb-4">FINANCIAL</h2>
+          <p>
+            We offer financial advice for the projection and evaluation of
+            investment projects, detailed analysis of your financial situation
+            and support in obtaining credit. Our team works with you to
+            develop effective financial strategies, evaluate the viability of
+            investments and ensure that you obtain the necessary financing to
+            achieve your business objectives.
+          </p><br><br>
+          <h2 class="mb-4">AUDIT</h2>
+          <p>
+            We conduct a thorough audit of your financial statements and
+            accounting to ensure the accuracy and reliability of the
+            information reported. Our detailed review process provides you
+            with a clear view of your company's financial situation, ensuring
+            transparency and compliance with accounting and tax regulations.
+          </p><br><br>
         </div>
       </div>
-    </section>
-
-    <!-- ====================== -->
-    <!--    BG Formulario       -->
-    <!-- ====================== -->
-    <section id="seccion-contacto"
-      class="border-bottom border-secondary border-2">
-      <!-- ====================== -->
-      <!--       Formulario       -->
-      <!-- ====================== -->
-      <div class="container" id="contenedor-formulario">
-        <div id="titulo-formulario" class="text-center mb-4">
-          <div><img src="../img/contacto.svg" alt="Contacto"
-              class="img-fluid mt-3" width="100"
-              height="100"></div>
-          <h2>Contact us</h2>
-          <p class="fs-5 text-center">We are here to help you manage your
-            business</p>
-          <p class="fs-5 text-center"><a href="tel:800 0010 789">800 0010
-              789</a></p>
-        </div>
-        <form
-          action="https://formsubmit.co/atencion@ruzyasociados.com"
-          method="POST">
-          <div class="mb-3">
-            <input type="text" name="nombre" class="form-control"
-              id="nombre" placeholder="Name" required>
+    </div>
+  </section>
+  
+  <!-- ====================== -->
+  <!--    BG Formulario       -->
+  <!-- ====================== -->
+  <section id="seccion-contacto" class="border-bottom text-center py-5">
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactoModal">
+      Contact us
+    </button>
+  </section>
+  <!-- ====================== -->
+  <!--       Formulario       -->
+  <!-- ====================== -->
+  <div class="modal fade" id="contactoModal" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form action="https://formsubmit.co/atencion@ruzyasociados.com" method="POST">
+          <div class="modal-header flex-column align-items-center">
+            <h5 class="modal-title w-100 text-center mb-2" id="contactoModalLabel">
+              Telephone: 1 800 0010 789
+            </h5>
+            <button type="button" class="close position-absolute" style="right: 1rem; top: 1rem;" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="mb-3">
-            <input type="tel" name="phone" class="form-control"
-              id="tel" placeholder="Phone" required>
+          <div class="px-4 pt-2 pb-0 text-center">
+            <div class="mb-2">
+              Send us an email to:<br>
+              <a href="mailto:atencion@ruzyasociados.com">atencion@ruzyasociados.com</a><br>
+              or fill in the following fields:
+            </div>
           </div>
-          <div class="mb-3">
-            <input type="email" name="email" class="form-control"
-              id="email" placeholder="E-mail" required>
-          </div>
-          <div class="mb-3">
-            <input type="text" name="giro" class="form-control"
-              id="giro" placeholder="Business line" required>
-          </div>
-          <div class="mb-3">
-            <textarea name="message" class="form-control"
-              id="exampleFormControlTextarea1" rows="3"
-              placeholder="Write your message"></textarea>
-          </div>
-          <div class="mb-3 d-flex justify-content-center">
-            <input type="submit" class="btn btn-primary w-100 fs-5"
-              value="Enviar">
-              <input type="hidden" name="_next"
-              value="https://ruzyasociados.com/">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">E-mail address</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Subject <span class="text-muted">(opcional)</span></label>
+              <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Message</label>
+              <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="https://ruzyasociados.com/">
             <input type="hidden" name="_captcha" value="false">
           </div>
-
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary w-100">Send</button>
+          </div>
         </form>
       </div>
-    </section>
-
-    <!-- ====================== -->
-    <!--      Pie de pagina     -->
-    <!-- ====================== -->
-    <footer class="w-100 aling-items-center justify-content-center">
-      <p class="fs-5 px3 pt-3">Ruz y Asociados &copy; All Rights Reserved
-        2024</p>
+    </div>
+  </div>
+  
+  <!-- Botón "Ir arriba" -->
+  <button id="btn-ir-arriba" title="Ir al inicio">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+  
+  <!-- ====================== -->
+  <!--      Pie de pagina     -->
+  <!-- ====================== -->
+  <footer class="w-100 aling-items-center justify-content-center">
+    <p class="fs-5 px3 pt-3">Ruz y Asociados &copy; All Rights Reserved
+      2024</p>
       <div id="iconos">
         <a
-          href="https://mx.linkedin.com/company/ruz-y-asociados-sc-"><i
-            class="bi bi-linkedin"></i></a>
+        href="https://mx.linkedin.com/company/ruz-y-asociados-sc-"><i
+        class="bi bi-linkedin"></i></a>
         <a
-          href="https://www.facebook.com/profile.php?id=100066439762105"><i
-            class="bi bi-facebook"></i></a>
+        href="https://www.facebook.com/profile.php?id=100066439762105"><i
+        class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/ruzyasociados_/"><i
-            class="bi bi-instagram"></i></a>
-      </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          class="bi bi-instagram"></i></a>
+        </div>
+      </footer>
+      
+      <script>
+        // Mostrar el botón solo cuando se hace scroll hacia abajo
+        window.addEventListener('scroll', function() {
+          const btn = document.getElementById('btn-ir-arriba');
+          if (window.scrollY > 200) {
+            btn.style.display = 'flex';
+          } else {
+            btn.style.display = 'none';
+          }
+        });
+        
+        // Scroll suave al inicio
+        document.getElementById('btn-ir-arriba').addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      </script>
+      <script>
+        // Ocultar el botón si el footer es visible
+        function isFooterVisible() {
+          const footer = document.querySelector('footer');
+          const btn = document.getElementById('btn-ir-arriba');
+          if (!footer || !btn) return;
+          const rect = footer.getBoundingClientRect();
+          const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+          // Si el footer está visible en la ventana
+          if (rect.top < windowHeight && rect.bottom > 0) {
+            btn.style.display = 'none';
+          }
+        }
+        
+        window.addEventListener('scroll', isFooterVisible);
+        window.addEventListener('resize', isFooterVisible);
+      </script>
+      
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous">
     </script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="../js/menu.js"></script>
-
-  </body>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="../js/menu.js"></script>
+  
+</body>
 
 </html>

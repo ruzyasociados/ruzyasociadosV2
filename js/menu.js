@@ -20,8 +20,9 @@ window.onscroll = function() {
 };
 
 // Cerrar el menú de navegación al seleccionar una opción
+// Cerrar el menú de navegación solo si NO es dropdown-toggle
 document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll("#navbarSupportedContent .nav-link");
+  const navLinks = document.querySelectorAll("#navbarSupportedContent .nav-link:not(.dropdown-toggle)");
 
   navLinks.forEach(link => {
     link.addEventListener("click", function() {
@@ -46,3 +47,5 @@ document.addEventListener("click", function(event) {
     bsCollapse.hide(); // Cierra el menú
   }
 });
+
+

@@ -1,704 +1,640 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google fonts for icons -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href>
+    
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/conta.css">
+    <link rel="icon" href="../img/icono-pagina.png" type="image/png">
+    <title>RUZ Y ASOCIADOS</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DW3NGZH5PC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        
+        gtag('config', 'G-DW3NGZH5PC');
+    </script>
+    
+</head>
 
-        <!-- Animate On Scroll -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-        <!-- Widgets -->
-        <script src="https://static.elfsight.com/platform/platform.js"
-            data-use-service-core defer></script>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/main.css">
-        <title>RUZ Y ASOCIADOS</title>
-        <link rel="icon" href="../img/icono-pagina.png" type="image/png">
-    </head>
-
-    <body>
-        <!-- ====================== -->
-        <!--       Encabezado       -->
-        <!-- ====================== -->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
-            id="menu">
-            <a class="navbar-brand" href="#">
-                <span class="text-primary fs-5 fw-bold ml-5">
-                    <img src="../img/logo-ruz-b.png" alt="logo de Ruz" width="130"
-            height="50">
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-3 ml-auto">
-                    <!-- Añadido mx-3 para margen horizontal y ml-auto para alinear a la derecha -->
-                    <li class="nav-item active">
-                        <a class="nav-link text-light"
-                            href="../english/home.html">HOME
-                            <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-light"
-                            href="#servicios">SERVICES</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-light"
-                            href="#seccion-contacto">CONTACT</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="../index.html"><img
-                                src="../img/globe.svg"
-                                alt="Cambio de idioma">ESP</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- ====================== -->
-        <!--         Slider         -->
-        <!-- ====================== -->
-
-        <div id="carouselExampleCaptions"
-            class="carousel slide carousel-fade full-screen"
-            data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-              </ol>
-
-            <div class="carousel-inner">
-                <!-- Silide 1 -->
-                <div class="carousel-item active" data-interval="9000">
-                    <img src="../img/slider-1.png" class="d-block w-100"
-                        alt="slide1">
-                    <div class="carousel-caption">
-                        <section data-aos="fade-up">
-                            <h5 class="text-light d-flex">
-                                Fast and smart resolution
-                            </h5>
-                            <a
-                                href="../servicios-en/en-sabermas.html"><button>More
-                                    info</button></a>
-                        </section>
-                    </div>
-                </div>
-                <!-- Silde 2 -->
-                <div class="carousel-item" data-interval="9000">
-                    <img src="../img/slider-2.jpg" class="d-block w-100"
-                        alt="slide2">
-                    <div class="carousel-caption">
-                        <section data-aos="fade-up" id="seccion-slide3">
-                            <h5>Accounting Management and <br>Advanced
-                                Administration</h5>
-                            <p class="text-light d-flex">
-                                Optimize your administration and accounting with
-                                our advanced <br>management and personalized
-                                solutions.
-                            </p>
-                            <a
-                                href="../servicios-en/en-contabilidad.html"><button>More
-                                    info</button></a>
-                        </section>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="carousel-item" data-interval="9000">
-                    <img src="../img/slider-3.jpg" class="d-block w-100"
-                        alt="slide3">
-                    <div class="carousel-caption">
-                        <section data-aos="fade-up" id="seccion-slide3">
-                            <h5>Compliance Solutions</h5>
-                            <p class="text-light d-flex">
-                                Ensure compliance and protect your investment
-                                with our <br>specialized solutions.
-                            </p>
-                            <a
-                                href="../servicios-en/en-soluciones-de-cumplimiento.html"><button>More
-                                    info</button></a>
-                        </section>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="carousel-item" data-interval="9000">
-                    <img src="../img/slider-4.webp" class="d-block w-100"
-                        alt="slide3">
-                    <div class="carousel-caption">
-                        <section data-aos="fade-up" id="seccion-slide3">
-                            <h5>Comprehensive Consulting Services</h5>
-                            <p class="text-light d-flex">
-                                Optimize your administrative and accounting
-                                management with our <br>comprehensive and
-                                specialized solutions.
-                            </p>
-                            <a href="../servicios-en/en-legal.html"><button>More
-                                    info</button></a>
-                        </section>
-                    </div>
-                </div>
-                <!-- Slide 5 -->
-                <div class="carousel-item" data-interval="9000">
-                    <img src="../img/internacional.webp" class="d-block w-100" alt="slide3">
-                    <div class="carousel-caption">
-                      <section data-aos="fade-up" id="seccion-slide3">
-                        <h5>Global Trade and Migration Management</h5>
-                        <p class="text-light d-flex">
-                            Optimize your international processes and
-                            immigration procedures <br>with our specialized
-                            and efficient management.
-                        </p>
-                        <a href="./servicios/migracion.html"><button>More info</button></a>
-                      </section>
-                    </div>
-                  </div>
-                <!-- Silide 6 -->
-                <div class="carousel-item" data-interval="9000">
-                    <img src="../img/slider-6.jpg" class="d-block w-100"
-                        alt="slide3">
-                    <div class="carousel-caption">
-                        <section data-aos="fade-up" id="seccion-slide3">
-                            <h5>Tax Management</h5>
-                            <p class="text-light d-flex">
-                                Optimize your tax strategy and ensure regulatory
-                                compliance <br>with our comprehensive and
-                                specialized advice.
-                            </p>
-                            <a
-                                href="../servicios-en/en-fiscal.html"><button>More
-                                    info</button></a>
-                        </section>
-                    </div>
+<body>
+    <!-- ====================== -->
+    <!--       Encabezado       -->
+    <!-- ====================== -->
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="menu">
+                        <a class="navbar-brand" href="#">
+                            <a href="home.html">
+                                <img src="../img/logo-ruz-b.png" alt="logo de Ruz" width="130" height="50">
+                            </a>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-3 ml-auto">
+                            <!-- Añadido mx-3 para margen horizontal y ml-auto para alinear a la derecha -->
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" href="home.html">HOME
+                                    <span class="sr-only">(current)</span></a>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-light dropdown-toggle"   id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SERVICES
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right bg-primary" aria-labelledby="serviciosDropdown">
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-contabilidad.html">Accounting</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-soluciones-de-cumplimiento.html">Compliance solutions</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-asesoria-integral.html">Integral consulting</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-planificacion-tributaria-internacional.html">International tax planning</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-fiscal.html">Fiscal</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-legal.html">Legal</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-estudios-de-presios-de-transferencia.html">Transfer pricing studies</a>
+                                        <a class="dropdown-item text-light" href="../servicios-en/en-migracion.html">Migration</a>
+                                    </div>
+                                    
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#seccion-contacto">CONTACT</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="../index.html">
+                                        <img src="../img/globe.svg" alt="Cambio de idioma" style="width:20px; height:20px; margin-right:5px;">
+                                        <img src="../img/mx.webp" alt="English" class="img-fluid" style="max-width:24px; height:auto; vertical-align:middle;">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-
-            <a class="carousel-control-prev" href="#carouselExampleCaptions"
-                role="button" data-slide="prev" style="width: 10%;">
-                <span class="carousel-control-prev-icon"
-                    aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-
-            <a class="carousel-control-next" href="#carouselExampleCaptions"
-                role="button" data-slide="next" style="width: 10%;">
-                <span class="carousel-control-next-icon"
-                    aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
         </div>
-
-        <!-- ====================== -->
-        <!--        Servicios       -->
-        <!-- ====================== -->
-        <section>
-            <div class="card_wrapper py-1" id="servicios">
+    </section>
+    
+    
+    <!-- ====================== -->
+    <!--         Slider         -->
+    <!-- ====================== -->
+    
+    <section class="apartado-ruz">
+        <div class="fondo-gif"></div>
+        <div class="contenido-texto">
+            <h1 style="color: white; ">Ruz y Asociados</h1> 
+        </div>
+    </section>
+    
+    
+    <!-- ====================== -->
+    <!--        Servicios       -->
+    <!-- ====================== -->
+    <div class="mb-5 d-block d-md-none">
+        <div class="text-center">
+            <br><br>
+            <h2 id="azul">SERVICIOS</h2>
+        </div>
+    </div>
+    
+    <div class="d-block d-md-none">
+        <div class="card mb-4">
+            <img src="../img/conta.jpg" class="card-img-top" alt="Contabilidad">
+            <div class="card-body text-center">
+                <img src="../img/logo-ruz.png" alt="Logo Ruz" style="width:40px;">
+                <h5 class="card-title mt-2">ACCOUNTING</h5>
+                <p class="card-text">
+                    Optimize your administration and accounting with our advanced management and customized solutions. 
+                </p>
+                <a href="../servicios-en/en-contabilidad.html" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <img src="../img/cumpli.jpg" class="card-img-top" alt="Soluciones de cumplimiento">
+            <div class="card-body text-center">
+                <img src="../img/logo-ruz.png" alt="Logo Ruz" style="width:40px;">
+                <h5 class="card-title mt-2">COMPLIANCE SOLUTIONS</h5>
+                <p class="card-text">
+                    Ensure compliance and protect your investment with our specialized solutions.
+                </p>
+                <a href="../servicios-en/en-soluciones-de-cumplimiento.html" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <img src="../img/aseso.jpg" class="card-img-top" alt="Asesoría integral">
+            <div class="card-body text-center">
+                <img src="../img/logo-ruz.png" alt="Logo Ruz" style="width:40px;">
+                <h5 class="card-title mt-2">INTEGRAL CONSULTING</h5>
+                <p class="card-text">
+                    Optimize your administrative and accounting management with our comprehensive and specialized solutions.
+                </p>
+                <a href="../servicios-en/en-asesoria-integral.html" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <img src="../img/plani.jpg" class="card-img-top" alt="Planificación tributaria internacional">
+            <div class="card-body text-center">
+                <img src="../img/logo-ruz.png" alt="Logo Ruz" style="width:40px;">
+                <h5 class="card-title mt-2">International tax plannin</h5>
+                <p class="card-text">
+                    Optimize the tax structure of your global business to minimize taxes and ensure legal compliance in any country.
+                </p>
+                <a href="../servicios-en/en-planificacion-tributaria-internacional.html" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+        <div class="text-center mb-4">
+            <a href="../servicios-en/en-servicios.html" class="btn btn-outline-primary">Solutions portfolio</a>
+        </div>
+    </div>
+    
+    <!-- ====================== -->
+    <!--        Servicios       -->
+    <!-- ====================== -->
+    <section>
+        <div class="card_wrapper py-1 d-none d-md-block" id="servicios">
             <div class="container">
                 <div class="mb-5">
-                <div class="text-center">
-                    <br><br>
-                    <h2 id="azul">SERVICES</h2>
+                    <div class="text-center">
+                        <br><br>
+                        <h2 id="azul">SERVICES</h2>
+                    </div>
                 </div>
-                </div>
-
-                <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up">
-                <!-- Tarjeta 1 -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                    <a href="../servicios/contabilidad.html" class="card-link">
-                    <div class="card text-center card-hover same-size-card" style="border-radius: 10px; overflow: hidden;">
-                        <div class="ratio ratio-16x9">
-                        <img class="mt-3" src="../img/iconos/contavilidad.svg"
-                            alt="Contabilidad" width="50" height="50">
+                
+                <section class="servicios-feature">
+                    <!-- Servicio 1 -->
+                    
+                    <div class="servicio-row">
+                        <div class="servicio-col servicio-texto">
+                            <div class="servicio-header">
+                                <div class="wind-animation-header">
+                                    <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                        <path class="wind-path-header" d="M0 9 Q100 0 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                                <img src="../img/logo-ruz.png" alt="Logo Ruz" class="servicio-logo">
+                            </div>
+                            <h3 class="servicio-titulo">ACCOUNTING</h3>
+                            <p class="servicio-descripcion">
+                                Optimize your administration and accounting with our advanced management and customized solutions.
+                            </p>
+                            <a href="../servicios-en/en-contabilidad.html" class="btn btn-primary btn-servicio">Learn more</a>            
+                            <div class="wind-animation-footer">
+                                <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path class="wind-path-footer" d="M0 9 Q100 18 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="card-body">
-                        <h6 class="card-title">ACCOUNTING</h6>
-                        <p class="card-text text-center">
-                            Optimize your administration and accounting 
-                            with our advanced management and personalized solutions.
-                        </p>
+                        <div class="servicio-col servicio-imagen">
+                            <img src="../img/conta.jpg" alt="Contabilidad">
                         </div>
                     </div>
-                    </a>
-                </div>
-
-                <!-- Tarjeta 2 -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                    <a href="../servicios/soluciones-de-cumplimiento.html" class="card-link">
-                    <div class="card text-center card-hover same-size-card" style="border-radius: 10px; overflow: hidden;">
-                        <div class="ratio ratio-16x9">
-                        <img class="mt-3" src="../img/iconos/soluciones-de-cumplimiento.svg"
-                            alt="Soluciones de Cumplimiento" width="50" height="50">
+                    
+                    <!-- Servicio 2 -->
+                    <div class="servicio-row">
+                        <div class="servicio-col servicio-imagen">
+                            <img src="../img/cumpli.jpg" alt="Contabilidad">
                         </div>
-                        <div class="card-body">
-                        <h6 class="card-title">COMPLIANCE SOLUTIONS</h6>
-                        <p class="card-text text-center">
-                            Ensure compliance and protect your 
-                            investment with our specialized solutions.
-                        </p>
+                        <div class="servicio-col servicio-texto">
+                            <div class="servicio-header">
+                                <div class="wind-animation-header">
+                                    <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                        <path class="wind-path-header" d="M0 9 Q100 0 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                                <img src="../img/logo-ruz.png" alt="Logo Ruz" class="servicio-logo">
+                            </div>
+                            <h3 class="servicio-titulo">COMPLIANCE SOLUTIONS</h3>
+                            <p class="servicio-descripcion">
+                                Ensure compliance and protect your investment with our specialized solutions.          
+                            </p>
+                            <a href="../servicios-en/en-soluciones-de-cumplimiento.html" class="btn btn-primary btn-servicio">Learn more</a>            
+                            <div class="wind-animation-footer">
+                                <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path class="wind-path-footer" d="M0 9 Q100 18 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Servicio 3 -->
+                    <div class="servicio-row">
+                        <div class="servicio-col servicio-texto">
+                            <div class="servicio-header">
+                                <div class="wind-animation-header">
+                                    <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                        <path class="wind-path-header" d="M0 9 Q100 0 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                    </svg>
+                                </div>
+                                <img src="../img/logo-ruz.png" alt="Logo Ruz" class="servicio-logo">
+                            </div>
+                            <h3 class="servicio-titulo">INTEGRAL CONSULTING</h3>
+                            <p class="servicio-descripcion">
+                                Optimize your administrative and accounting management with our comprehensive and specialized solutions.
+                            </p>
+                            <a href="../servicios-en/en-asesoria-integral.html" class="btn btn-primary btn-servicio">Learn more</a>            
+                            <div class="wind-animation-footer">
+                                <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path class="wind-path-footer" d="M0 9 Q100 18 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="servicio-col servicio-imagen">
+                            <img src="../img/aseso.jpg" alt="Contabilidad">
                         </div>
                     </div>
-                    </a>
-                </div>
-
-                <!-- Tarjeta 3 -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4 d-flex justify-content-center">
-                    <a href="../servicios/asesoria-integral.html" class="card-link">
-                    <div class="card text-center card-hover same-size-card" style="border-radius: 10px; overflow: hidden;">
-                        <div class="ratio ratio-16x9">
-                        <img class="mt-3" src="../img/iconos/asesoria-integral.svg"
-                            alt="Asesoría Integral" width="50" height="50">
+                </section>
+                
+                <!-- Servicio 4 -->
+                <div class="servicio-row">
+                    <div class="servicio-col servicio-imagen">
+                        <img src="../img/plani.jpg" alt="Contabilidad">
+                    </div>
+                    <div class="servicio-col servicio-texto">
+                        <div class="servicio-header">
+                            <div class="wind-animation-header">
+                                <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                    <path class="wind-path-header" d="M0 9 Q100 0 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <img src="../img/logo-ruz.png" alt="Logo Ruz" class="servicio-logo">
                         </div>
-                        <div class="card-body">
-                        <h6 class="card-title">COMPREHENSIVE ADVICE</h6>
-                        <p class="card-text text-center">
-                            Optimize your administrative and accounting 
-                            management with our comprehensive and specialized solutions.
+                        <h3 class="servicio-titulo">International tax plannin</h3>
+                        <p class="servicio-descripcion">
+                            Optimize the tax structure of your global business to minimize taxes and ensure legal compliance in any country.
                         </p>
+                        <a href="../servicios-en/en-planificacion-tributaria-internacional.html" class="btn btn-primary btn-servicio">Learn more</a>            
+                        <div class="wind-animation-footer">
+                            <svg width="100%" height="18" viewBox="0 0 400 18" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                                <path class="wind-path-footer" d="M0 9 Q100 18 200 9 T400 9" stroke="#253A75" stroke-width="2" fill="none"/>
+                            </svg>
                         </div>
                     </div>
-                    </a>
+                    
                 </div>
-                </div>
-
-                <div class="button-container">
+                
+            </div>
+            <div class="button-container">
                 <a href="../servicios-en/en-servicios.html">
                     <button>
-                        Solutions Portfolio
-                    <div class="arrow-wrapper">
-                        <div class="arrow"></div>
-                    </div>
+                        Solutions portfolio
+                        <div class="arrow-wrapper">
+                            <div class="arrow"></div>
+                        </div>
                     </button>
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== -->
+<!--         Intro          -->
+<!-- ====================== -->
+<h1 id="azul" class="text-center">A single office <br>for all your accounting needs</h1>
+<!-- ====================== -->
+<!--  Mision Vision Valores -->
+<!-- ====================== -->
+<section data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10"> <!-- Ajusta el ancho del contenedor -->
+                <div class="card-deck text-center">
+                    <!-- Añadido text-center para centrar el contenido de las tarjetas -->
+                    <div class="card">
+                        <img class="card-img-top mt-3" src="../img/double-right.svg" alt="Card image cap" width="50" height="50">
+                        <div class="card-body">
+                            <h5 class="card-title" id="azul">Mission</h5>
+                            <p class="card-text text-center">
+                                To offer the best financial, accounting and legal solutions for companies of all sizes, we create customized strategies to ensure the growth and success of our clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top mt-3" src="../img/eye.svg" alt="Card image cap" width="50" height="50">
+                        <div class="card-body">
+                            <h5 class="card-title" id="azul">Vision</h5>
+                            <p class="card-text text-center">
+                                To lead globally with excellence in business consulting, always exceeding our clients' expectations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-center">
-                ______________________________
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Valores y Filosofía-->
+<section data-aos="fade-up" data-aos-duration="1000">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="azul">Values and Philosophy</h5>
+                        <section id="valores">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/award.svg" alt="Card image cap" width="50"
+                                        height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Excellence</h5>
+                                            <p class="text-center">
+                                                We strive to provide the highest quality services, exceeding expectations at every opportunity.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/shield-lock.svg" alt="Card image cap" width="50"
+                                        height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Confidentiality</h5>
+                                            <p class="text-center">
+                                                We protect our clients' information with the utmost discretion and security.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/star.svg" alt="Card image cap" width="50"
+                                        height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Honesty</h5>
+                                            <p class="text-center">
+                                                We act with transparency in all our interactions.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/bookmark-heart.svg" alt="Card image cap"
+                                        width="50" height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Loyalty</h5>
+                                            <p class="text-center">
+                                                We pledge our loyalty to our customers, ensuring a dedicated and faithful service to their interests.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/check-circle.svg" alt="Card image cap"
+                                        width="50" height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Responsibility</h5>
+                                            <p class="text-center">
+                                                We assume full responsibility for our actions and decisions, guaranteeing integrity in our work.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card border-0 text-center">
+                                        <img class="card-img-top mt-3 mx-auto" src="../img/journal-check.svg" alt="Card image cap"
+                                        width="50" height="50">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center">Objectivity</h5>
+                                            <p class="text-center">
+                                                We make decisions based on unbiased facts and analysis, without external influences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== -->
+<!--       Acerca De        -->
+<!-- ====================== -->
+<section class="bg-light mb-5" data-aos="fade-right" id="acerca-de">
+    <div class="container mt-5" id="equipo">
+        <div class="row align-items-center">
+            <div class="col-md-12 text-center text-md-start">
+                <h1 class="m-5 fs-2">Who we are in <span id="azul">Ruz y Asociados</span></h1>
+                <p class="fs-4 mb-5">
+                    We are a firm with more than 20 years of experience, serving more than 100 clients in various industries, from micro-enterprises to multinationals. We offer personalized services that guarantee the best results. 
+                </p>
+                
+                <p class="fs-4 mb-5">
+                    We have offices in Mexico (Aguascalientes, Cancun, CDMX), USA (Houston, Chicago) and Canada (Vancouver, Victoria). Our team of consultants provides continuous support to maximize your company's potential. 
+                </p>
+                
+                <p class="fs-4 mb-5">
+                    Our competitive advantage is to offer real and tangible benefits, with visible results in the short, medium and long term, driving the growth and success of your business.
                 </p>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====================== -->
+<!--       Ubicacion        -->
+<!-- ====================== -->
+<section>
+    <div id="local" class="border-top justify-content-center">
+        <div class="mapa"></div>
+        <div>
+            <div class="wrapper">
+                <div>
+                    <h2 style="text-align: center;">URBICANS IN</h2>
+                    <h2 id="azul">AGUASCALIENTES, CANCÚN <br>AND CDMX</h2>
+                    <p id="azul" style="text-align: center;">
+                        Get to know our locations
+                    </p>
+                </div>
+                <br><div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="https://maps.app.goo.gl/ff4P2A83j685o8VQ7" id="mapa"><img src="../img/map.svg" alt="ubicacion">
+                                <p class="fs-5" id="azul">AGUASCALIENTES</p>
+                                <p>Paseo de los Chicahuales 902, Corral de Barrancos, C.P.
+                                    20900
+                                    Jesús María, Ags.</p>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://maps.app.goo.gl/1HvEwzZH2JmyRNMp7" id="mapa">
+                                    <img src="../img/map.svg" alt="ubicacion">
+                                    <p class="fs-5" id="azul">CANCÚN</p>
+                                    <p>Blvd. Kukulcan km. 20 Condominio Cancún Plaza Interior
+                                        4301,
+                                        Manzana 55, Lote 65. Colonia Zona Hotelera
+                                        C.P. 77500 Cancún, Quintana Roo.</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://maps.app.goo.gl/QPZrkK6PFbRp4oPKA" id="mapa">
+                                        <img src="../img/map.svg" alt="ubicacion" class="">
+                                        <p class="fs-5" id="azul">CIUDAD DE MEXICO</p>
+                                        <p>San Jerónimo 1348, Colonia San Jerónimo Lídice, La
+                                            Magdalena
+                                            Contreras, C.P. 10200, Ciudad de México.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
         <!-- ====================== -->
-        <!--         Intro          -->
-        <!-- ====================== -->
-        <section class="w-50 mx-auto text-center pt-5" id="intro">
-            <h1 class="p-3 fs-2 border-top border-3 text-center">A one-stop shop
-                for all
-                your <span
-                    class id="azul">accounting needs</span></h1>
-        </section>
-        <!-- ====================== -->
-        <!--  Mision Vision Valores -->
-        <!-- ====================== -->
-        <section data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <!-- Ajusta el ancho del contenedor -->
-                        <div class="card-deck text-center">
-                            <!-- Añadido text-center para centrar el contenido de las tarjetas -->
-                            <div class="card">
-                                <img class="card-img-top mt-3"
-                                    src="../img/double-right.svg"
-                                    alt="Card image cap" width="50" height="50">
-                                <div class="card-body">
-                                    <h5 class="card-title"
-                                        id="azul">Mission</h5>
-                                    <p class="card-text text-center">
-                                        Offering the best financial, accounting
-                                        and legal solutions for companies of all
-                                        sizes,
-                                        we create personalized strategies to
-                                        ensure the growth and success of our
-                                        clients.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img class="card-img-top mt-3"
-                                    src="../img/eye.svg" alt="Card image cap"
-                                    width="50" height="50">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="azul">Vision</h5>
-                                    <p class="card-text text-center">
-                                        Lead globally with excellence in
-                                        business advice, always exceeding our
-                                        clients' expectations.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Valores y Filosofía-->
-        <section data-aos="fade-up" data-aos-duration="1000">
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title" id="azul">Values and
-                                    Philosophy</h5>
-                                <section id="valores">
-                                    <div
-                                        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/award.svg"
-                                                    alt="Card image cap"
-                                                    width="50"
-                                                    height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Excellence</h5>
-                                                    <p class=" text-center">
-                                                        We strive to offer
-                                                        services of the highest
-                                                        quality, exceeding
-                                                        expectations at every
-                                                        opportunity.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/shield-lock.svg"
-                                                    alt="Card image cap"
-                                                    width="50"
-                                                    height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Confidentiality</h5>
-                                                    <p class=" text-center">
-                                                        We protect our clients'
-                                                        information with the
-                                                        maximum of discretion
-                                                        and security.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/star.svg"
-                                                    alt="Card image cap"
-                                                    width="50"
-                                                    height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Honesty</h5>
-                                                    <p class=" text-center">
-                                                        We act with transparency
-                                                        in all our interactions.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/bookmark-heart.svg"
-                                                    alt="Card image cap"
-                                                    width="50" height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Loyalty</h5>
-                                                    <p class=" text-center">
-                                                        We pledge our loyalty to
-                                                        our clients, ensuring a
-                                                        service dedicated and
-                                                        faithful to their
-                                                        interests.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/check-circle.svg"
-                                                    alt="Card image cap"
-                                                    width="50"
-                                                    height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Responsibility</h5>
-                                                    <p class=" text-center">
-                                                        We assume full
-                                                        responsibility for our
-                                                        actions and decisions,
-                                                        guaranteeing integrity
-                                                        in our work.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div
-                                                class="card border-0 text-center">
-                                                <img
-                                                    class="card-img-top mt-3 mx-auto"
-                                                    src="../img/journal-check.svg"
-                                                    alt="Card image cap"
-                                                    width="50"
-                                                    height="50">
-                                                <div class="card-body">
-                                                    <h5
-                                                        class="card-title">Objectivity</h5>
-                                                    <p class=" text-center">
-                                                        We make decisions based
-                                                        on unbiased facts and
-                                                        analysis, without
-                                                        outside influences.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ====================== -->
-        <!--       Acerca De        -->
-        <!-- ====================== -->
-        <section class="bg-light mb-5" data-aos="fade-right" id="acerca-de">
-            <div class="container mt-5" id="equipo">
-                <div class="row">
-                    <div class="col-md-12 text-center text-md-start">
-                        <h1 class="m-5 fs-2">Who We Are At <span class>Ruz &
-                                Asociados</span></h1>
-                        <p class="fs-4 mb-3">
-                            At Ruz & Asociados, we offer everything you need for
-                            your success:
-                            a team of experienced, multilingual professionals
-                            dedicated to
-                            saving you time and money when facing bureaucratic
-                            obstacles. We
-                            prioritize security and provide tangible and real
-                            benefits in the
-                            short, medium, and long term, reflected in
-                            significant savings. We
-                            serve a growing number of American, Canadian,
-                            European, Russian,
-                            and other nationalities that operate, invest, or
-                            start businesses
-                            in Mexico. Our multinational team, spanning Mexico,
-                            the U.S.,
-                            Canada, Poland, and Russia, works for your
-                            convenience, providing
-                            you with all the information necessary to make
-                            informed decisions
-                            aligned with your objectives.
-                        </p>
-                    </div>
-                    <div
-                        class="col-md-12 d-flex justify-content-center align-items-center mb-5">
-                        <img src="../img/logo-ruz.png" alt="quienes somos"
-                        class="img-fluid img-centered">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ====================== -->
-        <!--          Feed          -->
-        <!-- ====================== -->
-        <section class="d-flex justify-content-center aling-items-center w-100"
-            id="instagram">
-            <div ></div>
-        </section>
-
-        <!-- ====================== -->
-    <!--       Ubicacion        -->
-    <!-- ====================== -->
-    <section>
-        <div id="local" class="border-top justify-content-center">
-          <div class="mapa"></div>
-          <div>
-            <div class="wrapper">
-              <div class="w-75 m-3">
-                <h2>FIND US IN</h2>
-                <h2 id="azul">AGUASCALIENTES, CANCUN <br>AND MEXICO CITY</h2>
-                <p id="azul">
-                  One of our branches around the country
-                </p>
-              </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-4">
-                    <a href="https://maps.app.goo.gl/ff4P2A83j685o8VQ7" id="mapa">
-                      <img src="../img/map.svg" alt="location">
-                      <p class="fs-5" id="azul">AGUASCALIENTES</p>
-                      <p>Paseo de los Chicahuales 902, Corral de Barrancos, C.P.
-                        20900 Jesús María, Ags.</p>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="https://maps.app.goo.gl/1HvEwzZH2JmyRNMp7" id="mapa">
-                      <img src="../img/map.svg" alt="location">
-                      <p class="fs-5" id="azul">CANCUN</p>
-                      <p>Blvd. Kukulcan km. 20 Condominio Cancún Plaza Interior 4301,
-                        Manzana 55, Lote 65. Colonia Zona Hotelera
-                        C.P. 77500 Cancún, Quintana Roo.</p>
-                    </a>
-                  </div>
-                  <div class="col-md-4">
-                    <a href="https://maps.app.goo.gl/QPZrkK6PFbRp4oPKA" id="mapa">
-                      <img src="../img/map.svg" alt="location">
-                      <p class="fs-5" id="azul">MEXICO CITY</p>
-                      <p>San Jerónimo 1348, Colonia San Jerónimo Lídice, La Magdalena
-                        Contreras, C.P. 10200, Mexico City.
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-
-      
-        <!-- ====================== -->
         <!--    BG Formulario       -->
         <!-- ====================== -->
-        <section id="seccion-contacto"
-            class="border-bottom border-secondary border-2">
-            <!-- ====================== -->
-            <!--       Formulario       -->
-            <!-- ====================== -->
-            <div class="container" id="contenedor-formulario">
-                <div id="titulo-formulario" class="text-center mb-4">
-                    <div><img src="../img/contacto.svg" alt="Contacto"
-                            class="img-fluid mt-3" width="100"
-                            height="100"></div>
-                    <h2>Contact us</h2>
-                    <p class="fs-5 text-center">We are here to help you manage
-                        your
-                        business</p>
-                    <p class="fs-5 text-center"><a href="tel:800 0010 789">800
-                            0010
-                            789</a></p>
-                </div>
-                <form
-                    action="https://formsubmit.co/atencion@ruzyasociados.com"
-                    method="POST">
-                    <div class="mb-3">
-                        <input type="text" name="nombre" class="form-control"
-                            id="nombre" placeholder="Name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="tel" name="phone" class="form-control"
-                            id="tel" placeholder="Phone" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" name="email" class="form-control"
-                            id="email" placeholder="E-mail" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" name="giro" class="form-control"
-                            id="giro" placeholder="Business line" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea name="message" class="form-control"
-                            id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Write your message"></textarea>
-                    </div>
-                    <div class="mb-3 d-flex justify-content-center">
-                        <input type="submit" class="btn btn-primary w-100 fs-5"
-                            value="Enviar">
-                        <input type="hidden" name="_next"
-                        value="https://ruzyasociados.com/">
-                        <input type="hidden" name="_captcha" value="false">
-                    </div>
-
-                </form>
-            </div>
+        
+        <section id="seccion-contacto" class="border-bottom text-center py-5">
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contactoModal">
+                Contact us
+            </button>
         </section>
-
+        
+        <!-- Modal de Contacto -->
+        <div class="modal fade" id="contactoModal" tabindex="-1" role="dialog" aria-labelledby="contactoModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form action="https://formsubmit.co/atencion@ruzyasociados.com" method="POST">
+                        <div class="modal-header flex-column align-items-center">
+                            <h5 class="modal-title w-100 text-center mb-2" id="contactoModalLabel">
+                                Telephone: 800 0010 789
+                            </h5>
+                            <button type="button" class="close position-absolute" style="right: 1rem; top: 1rem;" data-dismiss="modal" aria-label="Cerrar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="px-4 pt-2 pb-0 text-center">
+                            <div class="mb-2">
+                                Send us an email to:<br>
+                                <a href="mailto:atencion@ruzyasociados.com">atencion@ruzyasociados.com</a><br>
+                                or fill in the following fields:
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="email">E-mail address</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Subject <span class="text-muted">(opcional)</span></label>
+                                <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Message</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                            </div>
+                            <input type="hidden" name="_next" value="https://ruzyasociados.com/">
+                            <input type="hidden" name="_captcha" value="false">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary w-100">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botón "Ir arriba" -->
+        <button id="btn-ir-arriba" title="Ir al inicio">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+        
         <!-- ====================== -->
         <!--      Pie de pagina     -->
         <!-- ====================== -->
         <footer class="w-100 aling-items-center justify-content-center">
-            <p class="fs-5 px3 pt-3">Ruz y Asociados &copy; All Rights Reserved
-                2024</p>
+            <p class="fs-5 px3 pt-3">Ruz y Asociados &copy; All Rights Reserved 2024</p>
             <section id="fondo-pie">
                 <div id="iconos">
-                    <a
-                        href="https://mx.linkedin.com/company/ruz-y-asociados-sc-"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100066439762105"><i
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/ruzyasociados_/"><i
-                            class="bi bi-instagram"></i></a>
+                    <a href="https://mx.linkedin.com/company/ruz-y-asociados-sc-"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100066439762105"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/ruzyasociados_/"><i class="bi bi-instagram"></i></a>
                 </div>
             </section>
         </footer>
-
+        
         <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous">
-  </script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script> AOS.init(); </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-  <script src="../js/menu.js"></script>
-    </body>
-
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script>
+            // Mostrar el botón solo cuando se hace scroll hacia abajo
+            window.addEventListener('scroll', function() {
+                const btn = document.getElementById('btn-ir-arriba');
+                if (window.scrollY > 200) {
+                    btn.style.display = 'flex';
+                } else {
+                    btn.style.display = 'none';
+                }
+            });
+            
+            // Scroll suave al inicio
+            document.getElementById('btn-ir-arriba').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+        <script>
+            // Ocultar el botón si el footer es visible
+            function isFooterVisible() {
+                const footer = document.querySelector('footer');
+                const btn = document.getElementById('btn-ir-arriba');
+                if (!footer || !btn) return;
+                const rect = footer.getBoundingClientRect();
+                const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+                // Si el footer está visible en la ventana
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    btn.style.display = 'none';
+                }
+            }
+            
+            window.addEventListener('scroll', isFooterVisible);
+            window.addEventListener('resize', isFooterVisible);
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script src="../js/menu.js"></script>
+    
+</body>
 </html>
