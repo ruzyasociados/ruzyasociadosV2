@@ -1,0 +1,63 @@
+.wind-divider {
+  width: 100%;           /* O el porcentaje que prefieras */
+  margin: 0 auto 24px auto; /* Centrado y con espacio abajo */
+  overflow: hidden;
+  background: transparent;
+  z-index: 2;
+}
+.wind-divider svg {
+  display: block;
+  width: 100%;
+  height: 64px;
+  max-width: 100%;
+}
+
+.wind-path-divider {
+  stroke-dasharray: 1920;
+  stroke-dashoffset: 1920;
+  animation: viento-divider-move 3s linear infinite;
+}
+
+.wind-light1 {
+  animation-delay: 0.7s;
+}
+.wind-light2 {
+  animation-delay: 1.4s;
+}
+
+@keyframes viento-divider-move {
+  0% { stroke-dashoffset: 1920; }
+  100% { stroke-dashoffset: -1920; }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .wind-divider svg {
+    height: 36px;
+  }
+}
+
+.gif-fullwidth {
+  width: 80%;         /* Cambia el ancho según prefieras (ej. 80%, 70%) */
+  margin: 24px auto;  /* Centrado y con espacio arriba/abajo */
+  overflow: hidden;
+  background: transparent;
+  border-radius: 18px; /* Opcional: bordes redondeados */
+  z-index: 1;
+}
+.gif-fullwidth img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 420px; /* Ajusta si lo necesitas */
+  object-fit: cover;
+}
+
+@keyframes viento-divider-move-reverse {
+  0% { stroke-dashoffset: 1920; }
+  100% { stroke-dashoffset: -1920; }
+}
+
+.wind-reverse {
+  animation: viento-divider-move-reverse 6s linear infinite !important;
+}
