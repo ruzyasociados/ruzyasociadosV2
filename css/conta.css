@@ -1,5 +1,5 @@
 .wind-divider {
-  width: 100%;           /* O el porcentaje que prefieras */
+  width: 100%; /* O el porcentaje que prefieras */
   margin: 0 auto 24px auto; /* Centrado y con espacio abajo */
   overflow: hidden;
   background: transparent;
@@ -26,8 +26,12 @@
 }
 
 @keyframes viento-divider-move {
-  0% { stroke-dashoffset: 1920; }
-  100% { stroke-dashoffset: -1920; }
+  0% {
+    stroke-dashoffset: 1920;
+  }
+  100% {
+    stroke-dashoffset: -1920;
+  }
 }
 
 /* Responsividad para pantallas pequeñas */
@@ -38,8 +42,8 @@
 }
 
 .gif-fullwidth {
-  width: 80%;         /* Cambia el ancho según prefieras (ej. 80%, 70%) */
-  margin: 24px auto;  /* Centrado y con espacio arriba/abajo */
+  width: 80%; /* Cambia el ancho según prefieras (ej. 80%, 70%) */
+  margin: 24px auto; /* Centrado y con espacio arriba/abajo */
   overflow: hidden;
   background: transparent;
   border-radius: 18px; /* Opcional: bordes redondeados */
@@ -54,8 +58,12 @@
 }
 
 @keyframes viento-divider-move-reverse {
-  0% { stroke-dashoffset: 1920; }
-  100% { stroke-dashoffset: -1920; }
+  0% {
+    stroke-dashoffset: 1920;
+  }
+  100% {
+    stroke-dashoffset: -1920;
+  }
 }
 
 .wind-reverse {
